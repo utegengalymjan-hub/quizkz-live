@@ -2,12 +2,14 @@ services:
   - type: web
     name: quizkz-live
     runtime: docker
-    plan: starter
+    # Тегін тариф: диск жоқ, деректер қайта іске қосылғанда жойылады.
+    # Ақылыға көшу: plan: starter және төмендегі disk бөлімін қосу.
+    plan: free
     healthCheckPath: /healthz
-    disk:
-      name: quizkz-data
-      mountPath: /data
-      sizeGB: 2
+    # disk:
+    #   name: quizkz-data
+    #   mountPath: /data
+    #   sizeGB: 2
     envVars:
       - key: NODE_ENV
         value: production
