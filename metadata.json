@@ -1,0 +1,6 @@
+{
+  "name": "QuizKZ Live",
+  "description": "Мектеп мұғалімдері мен оқушыларға арналған нақты уақыттағы сынып-ішілік викторина, Space Race, прокторинг және есеп беру платформасы.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
